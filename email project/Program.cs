@@ -4,6 +4,14 @@
     {
         static void Main(string[] args)
         {
+            //adatszerkezet
+            List<string> e_mailek = new List<string>();
+            e_mailek.Add("alma1@kört.hu");
+            e_mailek.Add("alma2@kört.hu");
+            e_mailek.Add("alma3@kört.hu");
+            e_mailek.Add("balazsa@kkszki.hu");
+            e_mailek.Add("alma.korte@alma.hu");
+
             //menüvezérlés
             while (true)
             {
