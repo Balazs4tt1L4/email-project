@@ -45,7 +45,16 @@
                         e_mailek.RemoveAt(index);
                         break;
                         
-                    case "4": Console.WriteLine("érvényes e-mailek listázása"); break;
+                    case "4": 
+                        Console.WriteLine("Érvényes e-mailek listája");
+                        foreach (string e_mail in e_mailek)
+                        {
+                            if (e_mail.Contains("@") && e_mail.Contains("."))
+                            {
+                                Console.WriteLine(e_mail);
+                            }
+                        }
+                        break;
                     default: Console.Clear(); Console.WriteLine("Rossz parancs"); break;
                 }
                 Console.ReadKey();
