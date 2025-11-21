@@ -25,7 +25,15 @@
                 switch (valsztas)
                 {
                     case "0": return;
-                    case "1": Console.WriteLine("e-mailek listázása"); break;
+                    case "1":
+                        Console.Clear();
+                        Console.WriteLine("e-mail címet: ");
+                        int sorszam = 0;
+                            foreach (string e_mail in e_mailek)
+                            {
+                                Console.WriteLine($"{sorszam++}.{e_mail}");                                
+                            }
+                            break;
                     case "2": Console.WriteLine("új e-mailek"); break;
                     case "3": Console.WriteLine("e-mail törlés"); break;
                     case "4": Console.WriteLine("érvényes e-mailek listázása"); break;
